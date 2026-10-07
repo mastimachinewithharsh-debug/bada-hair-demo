@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c1614" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Independent premium redesign concept for Bada Hair Korean Hair Salon in Singapore." />
+  <title>Bada Hair — Korean Hair & Beauty, Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 6 9 6-9 6z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8-6.1-3.2L5.9 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3H5a2 2 0 0 0-2 2c0 9 7 16 16 16a2 2 0 0 0 2-2v-2l-5-3-3 3a14 14 0 0 1-6-6l3-3-3-5Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M5 5h6v7H7c0 3 2 5 4 6H7c-2-1-4-4-4-7V7a2 2 0 0 1 2-2Zm10 0h6v7h-4c0 3 2 5 4 6h-4c-2-1-4-4-4-7V7a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+  </svg>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor"></div>
+
+  <div class="concept-bar">
+    <span>Independent redesign concept</span>
+    <a href="https://www.badahair.sg/" target="_blank" rel="noopener noreferrer">Official website <svg class="icon"><use href="#i-up"/></svg></a>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Bada Hair home">
+        <span class="brand__korean">바다</span>
+        <span class="brand__name">BADA</span>
+        <span class="brand__sub">KOREAN HAIR • SINGAPORE</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#story">Story</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="nav-whatsapp" href="https://wa.me/6580578808" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a class="nav-book" href="#booking">Book now <span><svg class="icon"><use href="#i-up"/></svg></span></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <svg class="icon icon-menu"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <div class="mobile-menu__eyebrow">Bada Hair / Singapore</div>
+      <nav aria-label="Mobile navigation">
+        <a href="#home"><span>01</span><strong>Home</strong><svg class="icon"><use href="#i-up"/></svg></a>
+        <a href="#story"><span>02</span><strong>Our story</strong><svg class="icon"><use href="#i-up"/></svg></a>
+        <a href="#services"><span>03</span><strong>Services</strong><svg class="icon"><use href="#i-up"/></svg></a>
+        <a href="#experience"><span>04</span><strong>Experience</strong><svg class="icon"><use href="#i-up"/></svg></a>
+        <a href="#reviews"><span>05</span><strong>Reviews</strong><svg class="icon"><use href="#i-up"/></svg></a>
+        <a href="#visit"><span>06</span><strong>Visit</strong><svg class="icon"><use href="#i-up"/></svg></a>
+      </nav>
+      <a class="mobile-menu__book" href="#booking">Book an appointment <svg class="icon"><use href="#i-up"/></svg></a>
+      <div class="mobile-menu__foot">333A Orchard Road · Mandarin Gallery · Singapore</div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__texture"></div>
+      <div class="hero__wrap">
+        <div class="hero__copy">
+          <div class="eyebrow" data-reveal><span></span> Jeju-inspired Korean salon · Orchard Road</div>
+          <h1 data-reveal>
+            <span class="hero__soft">Sea of style.</span>
+            <span class="hero__strong">Limitless<br>craft.</span>
+          </h1>
+          <p class="hero__lead" data-reveal>Precision Korean hair artistry, head spa rituals, colour, makeup and beauty experiences — curated in the heart of Singapore.</p>
+          <div class="hero__buttons" data-reveal>
+            <a class="button button--primary magnetic" href="#booking">Book your appointment <svg class="icon"><use href="#i-up"/></svg></a>
+            <a class="button button--ghost" href="#services">Explore services <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="hero__trust" data-reveal>
+            <div class="rating-big">4.8</div>
+            <div>
+              <div class="stars" aria-label="4.8 out of 5 stars">★★★★★</div>
+              <span>6,700+ Google reviews</span>
+            </div>
+            <div class="hero__trust-line"></div>
+            <div class="hero__trust-note">Mandarin Gallery<br><strong>Orchard Road</strong></div>
+          </div>
+        </div>
+
+        <div class="hero__media" data-reveal>
+          <div class="hero__frame hero__frame--main tilt-card">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1600&q=88" alt="Premium salon hair styling" />
+            <div class="hero__frame-overlay"></div>
+            <div class="hero__frame-label"><span>THE BADA EXPERIENCE</span><strong>Designed around how you want to feel.</strong></div>
+          </div>
+          <div class="hero__frame hero__frame--mini tilt-card">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85" alt="Luxury salon interior" />
+          </div>
+          <div class="hero__floating hero__floating--services">
+            <span>01 — 06</span>
+            <strong>Cut · Colour · Perm<br>Head Spa · Makeup</strong>
+            <small>Curated Korean services</small>
+          </div>
+          <div class="hero__floating hero__floating--location"><span class="live-dot"></span><div><small>VISIT US</small><strong>Mandarin Gallery</strong></div></div>
+          <button class="hero__sound" id="heroSound" type="button" aria-label="Pause ambient hero motion"><span></span></button>
+        </div>
+      </div>
+      <div class="hero__marquee" aria-hidden="true"><div><span>KOREAN HAIR ARTISTRY ✦ ORCHARD ROAD ✦ HEAD SPA ✦ COLOUR ✦ BEAUTY ✦</span><span>KOREAN HAIR ARTISTRY ✦ ORCHARD ROAD ✦ HEAD SPA ✦ COLOUR ✦ BEAUTY ✦</span></div></div>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="wrap intro__grid">
+        <div class="intro__label" data-reveal><span class="kicker">바다 / BADA</span><p>In Korean, “bada” means sea — a fitting symbol for limitless creativity, movement and ever-evolving style.</p></div>
+        <div class="intro__statement" data-reveal><h2>Not just a salon.<br><em>A beauty destination.</em></h2><p>Where Korean technique, thoughtful consultation and a calming Jeju-inspired atmosphere come together for a more personal kind of transformation.</p></div>
+      </div>
+    </section>
+
+    <section class="editorial" aria-label="Salon editorial images">
+      <div class="editorial__one" data-reveal><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1500&q=88" alt="Professional hair styling" /><div class="editorial__caption"><span>01 / CRAFT</span><strong>Details make the difference.</strong></div></div>
+      <div class="editorial__two" data-reveal><div class="editorial__copy"><span class="kicker kicker--light">KOREAN BEAUTY, SINGAPORE</span><h3>Modern technique.<br>Quiet confidence.</h3><p>From soft, wearable colour to precision cuts and restorative treatments, every service starts with understanding the person in the chair.</p><a href="#services" class="text-link text-link--light">Discover the menu <svg class="icon"><use href="#i-up"/></svg></a></div></div>
+      <div class="editorial__three" data-reveal><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=88" alt="Beauty and makeup service" /></div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <div><span class="kicker">CURATED SERVICES</span><h2>Choose your<br><em>next chapter.</em></h2></div>
+          <p>Hair, scalp and beauty services guided by experienced stylists and specialists — with consultation at the centre of every appointment.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card service-card--feature" data-reveal>
+            <div class="service-card__media"><img src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1400&q=88" alt="Haircut and hair styling" /></div>
+            <div class="service-card__content"><span>01 / HAIR</span><h3>Cut & Style</h3><p>Shape, movement and finish tailored to your face, texture and lifestyle.</p><div class="service-card__foot"><strong>From S$60</strong><button class="service-open" data-service="Hair Cut & Styling">Explore <svg class="icon"><use href="#i-up"/></svg></button></div></div>
+          </article>
+          <article class="service-card" data-reveal><div class="service-card__media"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=88" alt="Hair colour service" /></div><div class="service-card__content"><span>02 / COLOUR</span><h3>Colour & Perm</h3><p>Dimensional colour, soft Korean waves and texture designed for you.</p><div class="service-card__foot"><strong>Perm from S$150</strong><button class="service-open" data-service="Colour & Perm">Explore <svg class="icon"><use href="#i-up"/></svg></button></div></div></article>
+          <article class="service-card" data-reveal><div class="service-card__media"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=88" alt="Head spa treatment" /></div><div class="service-card__content"><span>03 / WELLNESS</span><h3>Korean Head Spa</h3><p>Scalp-focused care paired with deep relaxation and restorative ritual.</p><div class="service-card__foot"><strong>From S$120</strong><button class="service-open" data-service="Korean Head Spa">Explore <svg class="icon"><use href="#i-up"/></svg></button></div></div></article>
+          <article class="service-card" data-reveal><div class="service-card__media"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1000&q=88" alt="Korean makeup service" /></div><div class="service-card__content"><span>04 / BEAUTY</span><h3>Korean Makeup</h3><p>Fresh, polished and occasion-ready looks with a modern Korean touch.</p><div class="service-card__foot"><strong>From S$200</strong><button class="service-open" data-service="Korean Makeup">Explore <svg class="icon"><use href="#i-up"/></svg></button></div></div></article>
+          <article class="service-card" data-reveal><div class="service-card__media"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=88" alt="Nail care" /></div><div class="service-card__content"><span>05 / NAILS</span><h3>Nail & Foot Care</h3><p>Classic, gel and detailed nail artistry using quality Korean products.</p><div class="service-card__foot"><strong>From S$20</strong><button class="service-open" data-service="Nail & Foot Care">Explore <svg class="icon"><use href="#i-up"/></svg></button></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="film" id="experience">
+      <div class="film__media">
+        <video id="salonVideo" muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1800&q=88">
+          <source src="https://videos.pexels.com/video-files/3998516/3998516-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        </video>
+        <div class="film__shade"></div>
+      </div>
+      <div class="film__content wrap" data-reveal>
+        <div><span class="kicker kicker--light">THE EXPERIENCE</span><h2>Come for the craft.<br><em>Stay for the calm.</em></h2></div>
+        <div class="film__side"><p>Step away from the pace of Orchard Road and into a salon designed for comfort, detail and unhurried beauty.</p><button class="film__play" id="videoToggle" type="button"><span class="film__play-icon"><svg class="icon"><use href="#i-play"/></svg></span><span>Play salon film</span></button></div>
+      </div>
+    </section>
+
+    <section class="pricing section-pad" id="pricing">
+      <div class="wrap pricing__grid">
+        <div class="pricing__intro" data-reveal><span class="kicker">SIGNATURE MENU</span><h2>A clearer way<br>to plan your visit.</h2><p>Selected starting prices from Bada Hair’s published menu. Final pricing may vary by stylist level, hair length and consultation.</p><a href="https://www.badahair.sg/pricing" target="_blank" rel="noopener noreferrer" class="text-link">View official full menu <svg class="icon"><use href="#i-up"/></svg></a></div>
+        <div class="pricing__panel" data-reveal>
+          <div class="pricing-tabs" role="tablist" aria-label="Pricing categories">
+            <button class="pricing-tab is-active" data-tab="hair" role="tab" aria-selected="true">Hair</button>
+            <button class="pricing-tab" data-tab="spa" role="tab" aria-selected="false">Head Spa</button>
+            <button class="pricing-tab" data-tab="beauty" role="tab" aria-selected="false">Beauty</button>
+          </div>
+          <div class="pricing-list is-active" data-panel="hair">
+            <div><span>Haircut — Stylist</span><strong>from S$60</strong></div>
+            <div><span>Wash & Blow</span><strong>from S$45</strong></div>
+            <div><span>Cold Wave Perm</span><strong>from S$150</strong></div>
+            <div><span>Digital / Setting Perm</span><strong>from S$240</strong></div>
+          </div>
+          <div class="pricing-list" data-panel="spa">
+            <div><span>True Care Head Spa</span><strong>S$120</strong></div>
+            <div><span>Ayurveda Head Spa</span><strong>S$180</strong></div>
+            <div><span>Bond Repair Spa</span><strong>S$220</strong></div>
+            <div><span>Kerastase Fusion Spa</span><strong>S$280</strong></div>
+          </div>
+          <div class="pricing-list" data-panel="beauty">
+            <div><span>Korean Natural Makeup</span><strong>S$200</strong></div>
+            <div><span>Studio Photoshoot Makeup</span><strong>S$300</strong></div>
+            <div><span>Korean Bridal Makeup</span><strong>S$480</strong></div>
+            <div><span>Personal Colour Analysis</span><strong>S$180</strong></div>
+          </div>
+          <p class="pricing__note">Published prices are before GST and may be subject to service conditions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Bada Hair atmosphere">
+      <div class="gallery__track" id="galleryTrack">
+        <figure><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=86" alt="Salon interior" /><figcaption>Orchard / Space</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=86" alt="Hair styling" /><figcaption>Craft / Hair</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=86" alt="Salon service" /><figcaption>Detail / Styling</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1000&q=86" alt="Makeup service" /><figcaption>Beauty / Makeup</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=86" alt="Spa service" /><figcaption>Calm / Head Spa</figcaption></figure>
+      </div>
+      <div class="gallery__hint">Drag to explore <span>↔</span></div>
+    </section>
+
+    <section class="reviews section-pad" id="reviews">
+      <div class="wrap">
+        <div class="reviews__top" data-reveal>
+          <div><span class="kicker">REAL EXPERIENCES</span><h2>Thousands of visits.<br><em>One lasting feeling.</em></h2></div>
+          <div class="reviews__score"><strong>4.8</strong><div><span class="stars">★★★★★</span><p>6,700+ Google reviews</p></div></div>
+        </div>
+        <div class="testimonial-wrap" data-reveal>
+          <button class="slider-btn slider-btn--prev" id="prevReview" aria-label="Previous review">←</button>
+          <div class="testimonial-slider" id="testimonialSlider">
+            <article class="testimonial is-active"><svg class="icon testimonial__quote"><use href="#i-quote"/></svg><p>“My hair colour change and highlights came out beautifully. The stylist was patient, kind and meticulous throughout the experience.”</p><div><strong>Google reviewer</strong><span>Colour & highlights</span></div></article>
+            <article class="testimonial"><svg class="icon testimonial__quote"><use href="#i-quote"/></svg><p>“Attentive, genuine and experienced. The recommendations felt thoughtful rather than rushed, and the entire visit was comfortable.”</p><div><strong>Google reviewer</strong><span>Hair consultation</span></div></article>
+            <article class="testimonial"><svg class="icon testimonial__quote"><use href="#i-quote"/></svg><p>“Efficient service, helpful advice and a very relaxing salon experience. A place I would happily visit again.”</p><div><strong>Google reviewer</strong><span>Cut & styling</span></div></article>
+          </div>
+          <button class="slider-btn slider-btn--next" id="nextReview" aria-label="Next review">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking section-pad" id="booking">
+      <div class="wrap booking__grid">
+        <div class="booking__visual" data-reveal><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1400&q=88" alt="Hair salon appointment" /><div class="booking__visual-card"><span>FREE CONSULTATION</span><strong>Mon — Thu</strong><p>Ask the team about your hair or scalp before committing to a service.</p></div></div>
+        <div class="booking__form-shell" data-reveal>
+          <span class="kicker kicker--light">BOOK YOUR VISIT</span>
+          <h2>Ready for your<br><em>next look?</em></h2>
+          <p>Tell us what you are considering. This demo prepares a WhatsApp message for Bada Hair — it does not store your data.</p>
+          <form id="bookingForm">
+            <div class="form-row"><label>Name<input type="text" id="bookName" required placeholder="Your name" /></label><label>Phone<input type="tel" id="bookPhone" required placeholder="Your phone" /></label></div>
+            <label>Service<select id="bookService" required><option value="">Choose a service</option><option>Haircut & Styling</option><option>Colour & Perm</option><option>Korean Head Spa</option><option>Korean Makeup</option><option>Nail & Foot Care</option><option>Personal Colour Analysis</option><option>Not sure — need consultation</option></select></label>
+            <label>Message<textarea id="bookMessage" rows="4" placeholder="Tell us what you would like to achieve..."></textarea></label>
+            <button class="button button--light" type="submit">Continue on WhatsApp <svg class="icon"><use href="#i-up"/></svg></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section-pad" id="visit">
+      <div class="wrap visit__grid">
+        <div class="visit__copy" data-reveal><span class="kicker">VISIT BADA</span><h2>In the heart of<br><em>Orchard Road.</em></h2><p>Mandarin Gallery, Level 3. A premium Korean salon experience surrounded by Singapore’s most iconic shopping district.</p><a class="button button--primary" href="https://maps.google.com/?q=333A+Orchard+Road+Mandarin+Gallery+Singapore+238867" target="_blank" rel="noopener noreferrer">Get directions <svg class="icon"><use href="#i-up"/></svg></a></div>
+        <div class="visit__details" data-reveal>
+          <div class="visit-card"><svg class="icon"><use href="#i-pin"/></svg><span>LOCATION</span><strong>333A Orchard Road<br>#03-13 Mandarin Gallery<br>Singapore 238867</strong></div>
+          <div class="visit-card"><svg class="icon"><use href="#i-clock"/></svg><span>SALON HOURS</span><strong>Sat–Thu · 10:00am–8:00pm<br>Fri · 10:30am–8:00pm</strong><small>Head spa / facial: daily 10:00am–9:00pm</small></div>
+          <div class="visit-card"><svg class="icon"><use href="#i-phone"/></svg><span>CONTACT</span><strong>+65 8057 8808<br>hello@badahair.sg</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad">
+      <div class="wrap faq__grid">
+        <div data-reveal><span class="kicker">GOOD TO KNOW</span><h2>Before your<br><em>appointment.</em></h2></div>
+        <div class="faq__items" data-reveal>
+          <details open><summary>Do I need an appointment?<span></span></summary><p>Advance booking is recommended to secure your preferred time, although walk-ins may be accepted when capacity allows.</p></details>
+          <details><summary>Can I get a consultation first?<span></span></summary><p>Yes. Bada Hair publishes a free consultation option from Monday to Thursday. The team can assess your hair or scalp and suggest suitable services.</p></details>
+          <details><summary>What payments are accepted?<span></span></summary><p>The official FAQ lists cash, Visa, Mastercard, AMEX, NETS, PayNow, UnionPay, GrabPay and contactless payments.</p></details>
+          <details><summary>What if I am late?<span></span></summary><p>The salon asks guests to inform the team as soon as possible. Appointments more than 15 minutes late may need to be adjusted or cancelled depending on availability.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__brand"><span class="brand__korean">바다</span><strong>BADA</strong><p>Korean hair artistry, beauty and calm — in Singapore.</p></div>
+      <div class="footer__links"><div><span>EXPLORE</span><a href="#story">Story</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></div><div><span>CONNECT</span><a href="https://wa.me/6580578808" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="mailto:hello@badahair.sg">Email</a><a href="https://www.badahair.sg/" target="_blank" rel="noopener noreferrer">Official site</a></div><div><span>ADDRESS</span><p>333A Orchard Road<br>#03-13 Mandarin Gallery<br>Singapore 238867</p></div></div>
+    </div>
+    <div class="wrap footer__bottom"><span>© <span id="year"></span> Independent Bada Hair redesign concept. Not the official website.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <a class="floating-book" href="#booking"><span class="live-dot"></span> BOOK <svg class="icon"><use href="#i-up"/></svg></a>
+
+  <dialog class="service-modal" id="serviceModal">
+    <button class="service-modal__close" id="serviceModalClose" type="button" aria-label="Close service details"><svg class="icon"><use href="#i-close"/></svg></button>
+    <div class="service-modal__content"><span class="kicker">SERVICE ENQUIRY</span><h2 id="serviceModalTitle">Hair Cut & Styling</h2><p>Interested in this service? Start with a consultation and let the Bada team guide you to the right stylist, treatment and timing.</p><a class="button button--primary" id="serviceModalWhatsapp" href="https://wa.me/6580578808" target="_blank" rel="noopener noreferrer">Ask on WhatsApp <svg class="icon"><use href="#i-up"/></svg></a></div>
+  </dialog>
+</body>
+</html>
